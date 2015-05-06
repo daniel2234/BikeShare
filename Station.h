@@ -12,7 +12,7 @@
 @interface Station : NSObject
 
 @property (nonatomic,strong) HTTPCommunication *http;
-
+@property (nonatomic,strong) NSString *responseID;
 
 
 -(void)getStations;

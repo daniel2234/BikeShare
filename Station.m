@@ -16,7 +16,6 @@
     self = [super init];
     if (self) {
         _http = [[HTTPCommunication alloc]init];
-        [self getStations];
     }
     return self;
 }
@@ -27,8 +26,16 @@
      NSURL *url = [NSURL URLWithString:@"http://www.bikesharetoronto.com/stations/json"];
     [_http retrieveURL:url successBlock:^(NSData *response) {
         NSError *error= nil;
+        //reads the dictionary values
         NSDictionary *data = [NSJSONSerialization JSONObjectWithData:response options:0 error:&error];
-        NSLog(@"%@",data);
+        if (!error) {
+            NSArray *value = data[@"stationBeanList"];
+            
+            for (NSDictionary *dict in value) {
+                NSLog(@"%@,",dict[@"id"]);
+                NSLog(@"%@,",dict[@"stationName"]);
+            }
+        }
     }];
 }
 
