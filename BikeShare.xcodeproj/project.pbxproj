@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6574081A1AFA9A2000D5769A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 657408191AFA9A2000D5769A /* ViewController.m */; };
 		6578C8231AF997B000677A77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6578C8221AF997B000677A77 /* main.m */; };
 		6578C8261AF997B000677A77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6578C8251AF997B000677A77 /* AppDelegate.m */; };
 		6578C82C1AF997B000677A77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6578C82A1AF997B000677A77 /* Main.storyboard */; };
@@ -30,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		657408181AFA9A2000D5769A /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		657408191AFA9A2000D5769A /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		6578C81D1AF997B000677A77 /* BikeShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6578C8211AF997B000677A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6578C8221AF997B000677A77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -133,6 +136,8 @@
 		6578C8491AFA5FD100677A77 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				657408181AFA9A2000D5769A /* ViewController.h */,
+				657408191AFA9A2000D5769A /* ViewController.m */,
 				6578C8461AFA5FCC00677A77 /* MapViewController.h */,
 				6578C8471AFA5FCC00677A77 /* MapViewController.m */,
 			);
@@ -253,6 +258,7 @@
 				6578C8481AFA5FCC00677A77 /* MapViewController.m in Sources */,
 				6578C8261AF997B000677A77 /* AppDelegate.m in Sources */,
 				6578C8231AF997B000677A77 /* main.m in Sources */,
+				6574081A1AFA9A2000D5769A /* ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -443,6 +449,7 @@
 				6578C8421AF997B000677A77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6578C8431AF997B000677A77 /* Build configuration list for PBXNativeTarget "BikeShareTests" */ = {
 			isa = XCConfigurationList;
@@ -451,6 +458,7 @@
 				6578C8451AF997B000677A77 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

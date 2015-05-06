@@ -5,10 +5,12 @@
 #import <UIKit/UIKit.h>
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
+#import "HTTPCommunication.h"
 
 @interface MapViewController : UIViewController <MKMapViewDelegate,CLLocationManagerDelegate>
 
 @property(nonatomic,strong) MKMapView *mapView;
 @property (nonatomic,strong) CLLocationManager *locationManager;
+@property (nonatomic,strong) HTTPCommunication *http;
 
 @end

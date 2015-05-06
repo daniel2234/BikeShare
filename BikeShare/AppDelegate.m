@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "MapViewController.h"
+#import "ViewController.h"
 
 @interface AppDelegate ()
 
@@ -17,16 +18,26 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+    
+    
     MapViewController *mapViewController = [[MapViewController alloc]init];
     mapViewController.title = @"Maps";
     
     UIViewController *moreInfoController = [[UIViewController alloc]init];
     moreInfoController.title = @"More Info";
+    
+    UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    ViewController *feedViewController = [storyBoard instantiateViewControllerWithIdentifier:@"feedVC"];
+    feedViewController.title = @"Show";
+    
     mapViewController.view.backgroundColor = [UIColor whiteColor];
     moreInfoController.view.backgroundColor = [UIColor whiteColor];
+    feedViewController.view.backgroundColor = [UIColor whiteColor];
+    
+    
     UITabBarController *tabBarController = [[UITabBarController alloc]init];
     
-    [tabBarController setViewControllers:@[mapViewController,moreInfoController]];
+    [tabBarController setViewControllers:@[feedViewController,mapViewController,moreInfoController]];
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     self.window.rootViewController = tabBarController;
     return YES;
