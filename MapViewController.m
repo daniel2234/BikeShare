@@ -3,7 +3,8 @@
 #import <MapKit/MapKit.h>
 #import <CoreLocation/CoreLocation.h>
 #import "MapViewController.h"
-#import "HTTPCommunication.h"
+
+
 
 @interface MapViewController ()
 
@@ -13,7 +14,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    _http = [[HTTPCommunication alloc]init];
+
     _mapView = [[MKMapView alloc] initWithFrame:self.view.frame];
     [self.view addSubview:_mapView];
     self.mapView.delegate = self;
@@ -28,6 +29,10 @@
     
     self.mapView.showsUserLocation = YES;
     self.mapView.showsPointsOfInterest = NO;
+    
+    Station *station = [[Station alloc]init];
+    [station getStations];
+    
     
     // set longitude and longitude
 //    double lat = 43.642566;
