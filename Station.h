@@ -7,14 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <CoreLocation/CoreLocation.h>
 #import "HTTPCommunication.h"
+#import "AnnotateViewStation.h"
 
 @interface Station : NSObject
 
 @property (nonatomic,strong) HTTPCommunication *http;
-@property (nonatomic,strong) NSString *responseID;
 
-
--(void)getStations;
+-(void)getStationsOnSuccess:(void (^)(NSArray *stationList))success;//array wiill called once the network request finishes
 
 @end
