@@ -1,11 +1,3 @@
-//
-//  Station.m
-//  BikeShare
-//
-//  Created by Daniel Kwiatkowski on 2015-05-06.
-//  Copyright (c) 2015 Daniel Kwiatkowski. All rights reserved.
-//
-
 #import "Station.h"
 
 @implementation Station
@@ -34,12 +26,16 @@
         for (NSDictionary *dict in stationsResults) {
             NSNumber *longitude = dict[@"longitude"];
             NSNumber *latitude = dict[@"latitude"];
+            NSString *stationName = dict[@"stationName"];
+            NSString *availableDocks = [NSString stringWithFormat:@"%@",dict[@"availableDocks"]];
             
             CLLocationCoordinate2D anonCoords = CLLocationCoordinate2DMake([latitude doubleValue],[longitude doubleValue]);
             //allocate an annotation object
             AnnotateViewStation *annotation = [[AnnotateViewStation alloc]init];
             //pass the value of the annotation
             annotation.coordinate = anonCoords;
+            annotation.title = stationName;
+            annotation.subtitle = availableDocks;
             [stationList addObject:annotation];
         }
         if (success)

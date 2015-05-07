@@ -6,6 +6,8 @@
 //  Copyright (c) 2015 Daniel Kwiatkowski. All rights reserved.
 //s
 #import "AnnotateViewStation.h"
+#import <Foundation/Foundation.h>
+#import <MapKit/MapKit.h>
 
 @implementation AnnotateViewStation
 

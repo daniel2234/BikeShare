@@ -9,10 +9,12 @@
 #import "Station.h"
 
 
+
 @interface MapViewController : UIViewController <MKMapViewDelegate,CLLocationManagerDelegate>
 
 @property(nonatomic,strong) MKMapView *mapView;
 @property (nonatomic,strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) Station *station;
+
 
 @end

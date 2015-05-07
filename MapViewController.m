@@ -47,4 +47,12 @@
 }
 
 
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view
+calloutAccessoryControlTapped:(UIControl *)control
+{
+    UIViewController *moreInfoViewController = [[UIViewController alloc]
+                                                  initWithNibName:@"MoreInfo" bundle:nil];
+    moreInfoViewController.title = @"title";
+    [self.navigationController pushViewController:moreInfoViewController animated:YES];
+}
 @end
