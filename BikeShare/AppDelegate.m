@@ -26,6 +26,8 @@
     UIViewController *moreInfoController = [[UIViewController alloc]init];
     moreInfoController.title = @"More Info";
     
+    UINavigationController *navController = [[UINavigationController alloc]initWithRootViewController:mapViewController];
+    
     UIStoryboard *storyBoard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     ViewController *feedViewController = [storyBoard instantiateViewControllerWithIdentifier:@"feedVC"];
     feedViewController.title = @"Show";
@@ -37,7 +39,7 @@
     
     UITabBarController *tabBarController = [[UITabBarController alloc]init];
     
-    [tabBarController setViewControllers:@[feedViewController,mapViewController,moreInfoController]];
+    [tabBarController setViewControllers:@[feedViewController,navController,moreInfoController]];
     self.window = [[UIWindow alloc]initWithFrame:[[UIScreen mainScreen]bounds]];
     self.window.rootViewController = tabBarController;
     return YES;

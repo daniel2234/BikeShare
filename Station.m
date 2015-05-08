@@ -27,7 +27,7 @@
             NSNumber *longitude = dict[@"longitude"];
             NSNumber *latitude = dict[@"latitude"];
             NSString *stationName = dict[@"stationName"];
-            NSString *availableDocks = [NSString stringWithFormat:@"%@",dict[@"availableDocks"]];
+            NSString *availableDocks = [NSString stringWithFormat:@"Total Docks:%@",dict[@"availableDocks"]];
             
             CLLocationCoordinate2D anonCoords = CLLocationCoordinate2DMake([latitude doubleValue],[longitude doubleValue]);
             //allocate an annotation object

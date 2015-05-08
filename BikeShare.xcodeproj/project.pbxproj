@@ -11,6 +11,7 @@
 		6574081D1AFAAE5400D5769A /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574081C1AFAAE5400D5769A /* Station.m */; };
 		657408201AFACD0000D5769A /* AnnotateViewStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574081F1AFACD0000D5769A /* AnnotateViewStation.m */; };
 		6574085C1AFC6BBB00D5769A /* bike_share_toronto_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6574085B1AFC6BBB00D5769A /* bike_share_toronto_logo.png */; };
+		6574085F1AFD34DE00D5769A /* MyDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574085E1AFD34DE00D5769A /* MyDetailViewController.m */; };
 		6578C8231AF997B000677A77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6578C8221AF997B000677A77 /* main.m */; };
 		6578C8261AF997B000677A77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6578C8251AF997B000677A77 /* AppDelegate.m */; };
 		6578C82C1AF997B000677A77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6578C82A1AF997B000677A77 /* Main.storyboard */; };
@@ -41,6 +42,8 @@
 		6574081E1AFACD0000D5769A /* AnnotateViewStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotateViewStation.h; sourceTree = "<group>"; };
 		6574081F1AFACD0000D5769A /* AnnotateViewStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotateViewStation.m; sourceTree = "<group>"; };
 		6574085B1AFC6BBB00D5769A /* bike_share_toronto_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bike_share_toronto_logo.png; sourceTree = "<group>"; };
+		6574085D1AFD34DE00D5769A /* MyDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyDetailViewController.h; sourceTree = "<group>"; };
+		6574085E1AFD34DE00D5769A /* MyDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyDetailViewController.m; sourceTree = "<group>"; };
 		6578C81D1AF997B000677A77 /* BikeShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6578C8211AF997B000677A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6578C8221AF997B000677A77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -83,6 +86,8 @@
 		6578C8141AF997B000677A77 = {
 			isa = PBXGroup;
 			children = (
+				6574085D1AFD34DE00D5769A /* MyDetailViewController.h */,
+				6574085E1AFD34DE00D5769A /* MyDetailViewController.m */,
 				6578C84C1AFA652000677A77 /* CoreLocation.framework */,
 				6578C84A1AFA651600677A77 /* MapKit.framework */,
 				6578C8491AFA5FD100677A77 /* Controllers */,
@@ -271,6 +276,7 @@
 				6578C8511AFA6B0E00677A77 /* HTTPCommunication.m in Sources */,
 				6578C8481AFA5FCC00677A77 /* MapViewController.m in Sources */,
 				657408201AFACD0000D5769A /* AnnotateViewStation.m in Sources */,
+				6574085F1AFD34DE00D5769A /* MyDetailViewController.m in Sources */,
 				6574081D1AFAAE5400D5769A /* Station.m in Sources */,
 				6578C8261AF997B000677A77 /* AppDelegate.m in Sources */,
 				6578C8231AF997B000677A77 /* main.m in Sources */,

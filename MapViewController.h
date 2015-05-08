@@ -7,6 +7,7 @@
 #import <CoreLocation/CoreLocation.h>
 #import "HTTPCommunication.h"
 #import "Station.h"
+#import "MyDetailViewController.h"
 
 
 
@@ -15,6 +16,5 @@
 @property(nonatomic,strong) MKMapView *mapView;
 @property (nonatomic,strong) CLLocationManager *locationManager;
 @property (nonatomic, strong) Station *station;
-
 
 @end
