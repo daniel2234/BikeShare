@@ -13,6 +13,7 @@
 
 @implementation MapViewController
 
+
 - (void)viewDidLoad {
     [super viewDidLoad];
 
@@ -46,13 +47,40 @@
     }];
 }
 
+//-(MKAnnotationView *)mapView:(MKMapView *)mapView viewForAnnotation:(id<MKAnnotation>)annotation
+//{
+//    MKAnnotationView *view = [self.mapView dequeueReusableAnnotationViewWithIdentifier:@"annoView"];
+//    if(!view) {
+//        view = [[MKAnnotationView alloc] initWithAnnotation:annotation reuseIdentifier:@"annoView"];
+//        view.image = [UIImage imageNamed:@"bike_share_toronto_logo.png"];
+//        
+//    }
+//    return view;
+//}
 
-- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view
-calloutAccessoryControlTapped:(UIControl *)control
+
+
+- (MKAnnotationView *)mapView:(MKMapView *)theMapView viewForAnnotation:(id <MKAnnotation>)annotation
 {
-    UIViewController *moreInfoViewController = [[UIViewController alloc]
-                                                  initWithNibName:@"MoreInfo" bundle:nil];
-    moreInfoViewController.title = @"title";
-    [self.navigationController pushViewController:moreInfoViewController animated:YES];
+    // Try to dequeue an existing pin view first (code not shown).
+    
+    // If no pin view already exists, create a new one.
+    MKPinAnnotationView *customPinView = [[MKPinAnnotationView alloc]
+                                          initWithAnnotation:annotation reuseIdentifier:@"annoView"];
+    customPinView.pinColor = MKPinAnnotationColorPurple;
+    customPinView.canShowCallout = YES;
+    customPinView.image = [UIImage imageNamed:@"bike_share_toronto_logo.png"];
+    
+    // Because this is an iOS app, add the detail disclosure button to display details about the annotation in another view.
+    UIButton *rightButton = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
+    [rightButton addTarget:nil action:nil forControlEvents:UIControlEventTouchUpInside];
+    customPinView.rightCalloutAccessoryView = rightButton;
+    
+    // Add a custom image to the left side of the callout.
+    UIImageView *myCustomImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"bike_share_toronto_logo.png"]];
+    customPinView.leftCalloutAccessoryView = myCustomImage;
+    
+    return customPinView;
 }
+
 @end

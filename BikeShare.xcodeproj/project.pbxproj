@@ -10,6 +10,7 @@
 		6574081A1AFA9A2000D5769A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 657408191AFA9A2000D5769A /* ViewController.m */; };
 		6574081D1AFAAE5400D5769A /* Station.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574081C1AFAAE5400D5769A /* Station.m */; };
 		657408201AFACD0000D5769A /* AnnotateViewStation.m in Sources */ = {isa = PBXBuildFile; fileRef = 6574081F1AFACD0000D5769A /* AnnotateViewStation.m */; };
+		6574085C1AFC6BBB00D5769A /* bike_share_toronto_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 6574085B1AFC6BBB00D5769A /* bike_share_toronto_logo.png */; };
 		6578C8231AF997B000677A77 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6578C8221AF997B000677A77 /* main.m */; };
 		6578C8261AF997B000677A77 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 6578C8251AF997B000677A77 /* AppDelegate.m */; };
 		6578C82C1AF997B000677A77 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6578C82A1AF997B000677A77 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 		6574081C1AFAAE5400D5769A /* Station.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Station.m; sourceTree = "<group>"; };
 		6574081E1AFACD0000D5769A /* AnnotateViewStation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AnnotateViewStation.h; sourceTree = "<group>"; };
 		6574081F1AFACD0000D5769A /* AnnotateViewStation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AnnotateViewStation.m; sourceTree = "<group>"; };
+		6574085B1AFC6BBB00D5769A /* bike_share_toronto_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bike_share_toronto_logo.png; sourceTree = "<group>"; };
 		6578C81D1AF997B000677A77 /* BikeShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BikeShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6578C8211AF997B000677A77 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		6578C8221AF997B000677A77 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -106,6 +108,7 @@
 				6578C8251AF997B000677A77 /* AppDelegate.m */,
 				6578C82A1AF997B000677A77 /* Main.storyboard */,
 				6578C82D1AF997B000677A77 /* Images.xcassets */,
+				6574085B1AFC6BBB00D5769A /* bike_share_toronto_logo.png */,
 				6578C82F1AF997B000677A77 /* LaunchScreen.xib */,
 				6578C84E1AFA6AD200677A77 /* Models */,
 				6578C8201AF997B000677A77 /* Supporting Files */,
@@ -247,6 +250,7 @@
 				6578C82C1AF997B000677A77 /* Main.storyboard in Resources */,
 				6578C8311AF997B000677A77 /* LaunchScreen.xib in Resources */,
 				6578C82E1AF997B000677A77 /* Images.xcassets in Resources */,
+				6574085C1AFC6BBB00D5769A /* bike_share_toronto_logo.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
